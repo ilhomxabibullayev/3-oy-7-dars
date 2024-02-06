@@ -1,0 +1,145 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+button {
+  white-space: nowrap;
+  cursor: pointer;
+  border: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 1240px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 20px 100px;
+}
+.header .header__logo {
+  width: 30px;
+}
+.header .header__content {
+  display: flex;
+  align-items: center;
+}
+.header .header__list {
+  display: flex;
+  align-items: center;
+  margin-left: 650px;
+  gap: 30px;
+}
+.header .header__link {
+  color: #000;
+}
+.header .header__link:hover {
+  color: aqua;
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    padding: 10px 50px;
+  }
+  .header__link {
+    display: none;
+  }
+}
+.hero {
+  padding: 0 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("/img/hero-img.svg");
+  background-position: right;
+}
+.hero .hero__content {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.hero .hero__title {
+  width: 450px;
+  font-size: 46px;
+  margin-bottom: 10px;
+}
+.hero .hero__title:hover {
+  color: rgb(27, 184, 184);
+}
+.hero .hero__text {
+  width: 500px;
+  color: rgba(0, 0, 0, 0.568627451);
+  margin-bottom: 50px;
+}
+.hero .hero__btn {
+  color: #FFF;
+  padding: 15px 30px;
+  display: inline-flex;
+  background: rgb(27, 184, 184);
+  margin-bottom: 20px;
+}
+.hero .hero__img {
+  width: 100px;
+}
+.hero .hero__dicuration {
+  color: #000;
+}
+.hero .hero__dicuration:hover {
+  color: aqua;
+}
+
+@media screen and (max-width: 600px) {
+  .hero {
+    padding: 0 50px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("/img/hero-img.svg");
+    width: 600px;
+  }
+  .hero__content {
+    text-align: center;
+    flex-direction: column;
+  }
+  .hero__img {
+    text-align: center;
+  }
+  .hero__title {
+    width: 300px;
+  }
+  .hero__text {
+    width: 300px;
+  }
+  .hero__img2 {
+    width: 300px;
+  }
+}/*# sourceMappingURL=main.css.map */
